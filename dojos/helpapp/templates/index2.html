@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <div class="help">
+            <div class="form">
+                <p>Your name :</p>
+                <p>{{name}}</p>
+            </div>
+            <div class="form">
+                <p>Dojo location :</p>
+                <p>{{location}}</p>
+                </select>
+            </div>
+            <div class="form">
+                <p>Favorite Language :</p>
+                <p>{{Fave}}</p>
+            </div>
+            <div class="form">
+                <p>Comment (oprional):</p>
+                <p>{{commm}}</p>
+            </div>
+            <div class="but"><button>buttom</button></div>
+        </div>
+    </form>
+</body>
+
+</html>

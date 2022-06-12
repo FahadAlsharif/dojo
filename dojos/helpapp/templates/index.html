@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="help">
+        <form action="/result" method="POST">
+            <div class="form">
+                <p>Your name :</p> <input type="text" name="name">
+            </div>
+            <div class="form">
+                {% csrf_token %}
+                <p>Dojo location :</p><select name="location" id="">
+                    <option value="Jeddah">jeddah</option>
+                    <option value="Dammam">dammam</option>
+                </select>
+            </div>
+            <div class="form">
+                <p>Favorite Language :</p> <select name="Fave" id="">
+                    <option value="python">python</option>
+                    <option value="java">java</option>
+                </select>
+            </div>
+            <div class="form">
+                <p>Comment (oprional):</p>
+            </div>
+            <div><textarea class="form" name="commm" id="comm" cols="30" rows="10"></textarea></div>
+            <div class="but"><button>buttom</button></div>
+        </form>
+    </div>
+</body>
+
+</html>

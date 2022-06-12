@@ -1,0 +1,19 @@
+.help {
+    border: 5px black solid;
+    width: 50%;
+    margin: auto;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+textarea {
+    margin: auto;
+}
+
+.but {
+    text-align: end;
+}
